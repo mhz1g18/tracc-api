@@ -8,6 +8,8 @@
 package com.bezkoder.spring.jwt.mongodb.security.services.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -19,8 +21,9 @@ import com.bezkoder.spring.jwt.mongodb.repository.user.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
+
 	@Autowired
-	UserRepository userRepository;
+	private UserRepository userRepository;
 
 	@Override
 	@Transactional

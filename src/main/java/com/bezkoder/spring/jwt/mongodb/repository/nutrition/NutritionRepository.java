@@ -28,12 +28,11 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
      *
      * @param id the nutrition's id
      * @param userId the user's id
-     * @return Nutrition object wrapped in Optional in case
-     *         the query did not return a result
+     * @return Nutrition object wrapped in Optional
      */
 
     @Query("{ $or: [ { 'id': ?0, 'createdBy' : ?1 }, { 'id': ?0, 'createdBy' : 'ADMIN' } ] }")
-    Optional<Nutrition> getNutrityionById(String id, String userId);
+    Optional<Nutrition> getNutritionById(String id, String userId);
 
     /**
      * Deletes specific nutrition by id
@@ -58,13 +57,14 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
     List<Nutrition> findNutritionByType(String type);
 
     /**
-     * Searches for Nutrition based on 'name' key
+     * Searches for Nutrition  performing a
+     * regex based search on the name field
+     * search is case insensitive
      *
      * @return List of results
      */
 
-    // " { $and [ { 'name': { $regex: ?0, $options:'i' } }, $or: [ { 'id': ?0, 'createdBy' : ?1 }, { 'id': ?0, 'createdBy' : 'ADMIN' } ] ] }"
-    @Query("{ 'name': { $regex: ?0, $options:'i' } }") // add filtering such as getAllNutrition ??
+    @Query("{ 'name': { $regex: ?0, $options:'i' } }")
     List<Nutrition> findByName(String name);
 
 

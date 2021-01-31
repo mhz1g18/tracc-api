@@ -2,17 +2,19 @@ package com.bezkoder.spring.jwt.mongodb.models.nutrition;
 
 public class Supplement extends Nutrition {
 
-    private float quantity;
+    private EUnit unit;
 
     public Supplement() {
         super("SUPPLEMENT");
     }
 
-    public float getQuantity() {
-        return quantity;
+    public EUnit getUnit() {
+        return unit;
     }
 
-    public void setQuantity(float quantity) {
-        this.quantity = quantity;
+    public void setUnit(EUnit unit) {
+        this.unit = unit;
     }
+
+
 }

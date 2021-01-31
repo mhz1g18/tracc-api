@@ -1,6 +1,7 @@
 package com.bezkoder.spring.jwt.mongodb.models.nutrition;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,7 +14,13 @@ public class NutritionCategory {
     @Id
     private String id;
 
+    @Indexed
     private String name;
+
+    /**
+     * List of all nutrition that is in the category
+     * Uses reference over embedding to ensure consistency
+     */
 
     @DBRef
     private List<Nutrition> nutritionList = new ArrayList<>();

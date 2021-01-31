@@ -36,7 +36,7 @@ public class FoodDiaryEntry extends DiaryEntry {
         this.foodList = foodList;
 
         float calories = 0, fiber = 0, protein = 0, carbs = 0, fats = 0, sugars = 0, transfats = 0;
-        float quantity;
+        /*float quantity;
 
         for(Food food : foodList) {
 
@@ -49,7 +49,7 @@ public class FoodDiaryEntry extends DiaryEntry {
             fiber += food.getFiber()* quantity;
             fats += food.getFats()* quantity;
             transfats += food.getTransfats()* quantity;
-        }
+        }*/
 
         this.calories = calories;
         this.protein = protein;

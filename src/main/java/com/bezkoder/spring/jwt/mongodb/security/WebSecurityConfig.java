@@ -1,4 +1,4 @@
-/*
+/**
 * WebSecurityConfig
 * Extends WebSecurityConfigurerAdapter
 * Provides HttpSecurity to configure cors, csrf, session management
@@ -8,23 +8,30 @@
 
 package com.bezkoder.spring.jwt.mongodb.security;
 
+import com.bezkoder.spring.jwt.mongodb.repository.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.bezkoder.spring.jwt.mongodb.security.jwt.AuthEntryPointJwt;
 import com.bezkoder.spring.jwt.mongodb.security.jwt.AuthTokenFilter;
 import com.bezkoder.spring.jwt.mongodb.security.services.user.UserDetailsServiceImpl;
+
+import javax.management.MXBean;
 
 @Configuration
 @EnableWebSecurity
@@ -33,11 +40,14 @@ import com.bezkoder.spring.jwt.mongodb.security.services.user.UserDetailsService
 		jsr250Enabled = true,
 		prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-	@Autowired
-	UserDetailsServiceImpl userDetailsService;
 
 	@Autowired
-	private AuthEntryPointJwt unauthorizedHandler;
+	private  UserDetailsServiceImpl userDetailsService;
+
+	@Bean
+	public AuthenticationEntryPoint unauthorizedHandler() {
+		return new AuthEntryPointJwt();
+	}
 
 	@Bean
 	public AuthTokenFilter authenticationJwtTokenFilter() {
@@ -49,7 +59,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		authenticationManagerBuilder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
 	}
 
-	@Bean
+
+	@Bean(name = BeanIds.AUTHENTICATION_MANAGER)
 	@Override
 	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
@@ -63,7 +74,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().and().csrf().disable()
-			.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
+			.exceptionHandling().authenticationEntryPoint(unauthorizedHandler()).and()
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 			.authorizeRequests().antMatchers("/api/auth/**").permitAll()
 			.antMatchers("/api/test/**").permitAll()
@@ -71,4 +82,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 	}
+
+
 }

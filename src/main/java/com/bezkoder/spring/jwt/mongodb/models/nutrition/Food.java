@@ -2,85 +2,102 @@ package com.bezkoder.spring.jwt.mongodb.models.nutrition;
 
 
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
+
+/**
+ * Food Class
+ * Extends Nutrition
+ * Represents Nutrition documents in the MongoDB Nutrition collection
+ * @see Nutrition
+ *
+ * fields include the common macronutrients and a list of micronutrients
+ * where a micronutrient is represented by an instance of Supplement class
+ *
+ * Assumptions:
+ * Nutritional values are per 100 GRAMS, calculated by
+ *      the values, quantity and unit in a FoodRequest
+ *
+ */
 
 public class Food extends Nutrition {
 
     @NotNull
-    private float calories;
-    private float protein;
-    private float carbs;
-    private float sugars;
-    private float fiber;
-    private float fats;
-    private float transfats;
+    private int calories;
+    private int protein;
+    private int carbs;
+    private int sugars;
+    private int fiber;
+    private int fats;
+    private int transfats;
 
-    private float quantity = 1F;
+    private ArrayList<Supplement> micronutrients = new ArrayList<>();
 
     public Food() {
         super("FOOD");
     }
 
-    public float getCalories() {
+    public @NotNull int getCalories() {
         return calories;
     }
 
-    public void setCalories(float calories) {
+    public void setCalories(int calories) {
         this.calories = calories;
     }
 
-    public float getProtein() {
+    public int getProtein() {
         return protein;
     }
 
-    public void setProtein(float protein) {
+    public void setProtein(int protein) {
         this.protein = protein;
     }
 
-    public float getCarbs() {
+    public int getCarbs() {
         return carbs;
     }
 
-    public void setCarbs(float carbs) {
+    public void setCarbs(int carbs) {
         this.carbs = carbs;
     }
 
-    public float getSugars() {
+    public int getSugars() {
         return sugars;
     }
 
-    public void setSugars(float sugars) {
+    public void setSugars(int sugars) {
         this.sugars = sugars;
     }
 
-    public float getFats() {
+    public int getFats() {
         return fats;
     }
 
-    public void setFats(float fats) {
+    public void setFats(int fats) {
         this.fats = fats;
     }
 
-    public float getTransfats() {
+    public int getTransfats() {
         return transfats;
     }
 
-    public void setTransfats(float transfats) {
+    public void setTransfats(int transfats) {
         this.transfats = transfats;
     }
 
-    public float getFiber() {
+    public int getFiber() {
         return fiber;
     }
 
-    public void setFiber(float fiber) {
+    public void setFiber(int fiber) {
         this.fiber = fiber;
     }
 
-    public float getQuantity() {
-        return quantity;
+
+    public ArrayList<Supplement> getMicronutrients() {
+        return micronutrients;
     }
 
-    public void setQuantity(float quantity) {
-        this.quantity = quantity;
+    public void setMicronutrients(ArrayList<Supplement> micronutrients) {
+        this.micronutrients = micronutrients;
     }
 }

@@ -92,12 +92,7 @@ public class AuthController {
 					.body(new MessageResponse("error", "Email taken"));
 		}
 
-		// Create new user's account
-		UserProfile userProfile = userProfileService.createNewProfile();
-		User user = new User(signUpRequest.getUsername(), 
-							 signUpRequest.getEmail(),
-							 encoder.encode(signUpRequest.getPassword()),
-							 userProfile);
+
 
 		Set<String> strRoles = signUpRequest.getRoles();
 		Set<Role> roles = new HashSet<>();
@@ -128,6 +123,13 @@ public class AuthController {
 				}
 			});
 		}
+
+		// Create new user's account
+		UserProfile userProfile = userProfileService.createNewProfile();
+		User user = new User(signUpRequest.getUsername(),
+				signUpRequest.getEmail(),
+				encoder.encode(signUpRequest.getPassword()),
+				userProfile);
 
 		user.setRoles(roles);
 		userService.save(user);
