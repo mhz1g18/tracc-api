@@ -40,7 +40,7 @@ import javax.management.MXBean;
 		securedEnabled = true,
 		jsr250Enabled = true,
 		prePostEnabled = true)
-@EnableMongoRepositories(basePackages = {"com.bezkoder.spring.jwt.mongodb.repository"})
+//@EnableMongoRepositories(basePackages = {"com.bezkoder.spring.jwt.mongodb.repository"})
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	/*@Autowired
