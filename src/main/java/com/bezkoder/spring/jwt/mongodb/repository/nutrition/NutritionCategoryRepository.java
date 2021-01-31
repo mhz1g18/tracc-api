@@ -5,10 +5,13 @@ import com.bezkoder.spring.jwt.mongodb.models.user.ERole;
 import com.bezkoder.spring.jwt.mongodb.models.user.Role;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public interface NutritionCategoryRepository extends MongoRepository<NutritionCategory, String> {
 
     Optional<NutritionCategory> findByName(String name);

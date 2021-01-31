@@ -4,17 +4,17 @@ import com.bezkoder.spring.jwt.mongodb.models.user.User;
 import com.bezkoder.spring.jwt.mongodb.repository.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
 public class UserService {
+
     private final UserRepository userRepository;
 
     @Autowired
-    public UserService(@Qualifier("MongoRepo") UserRepository userRepository) {
+    public UserService( UserRepository userRepository) {
         this.userRepository = userRepository;
 
     }
