@@ -42,6 +42,8 @@ import javax.management.MXBean;
 		// jsr250Enabled = true,
 		prePostEnabled = true)
 
+// testing di for unit testing
+
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	UserDetailsServiceImpl userDetailsService;
