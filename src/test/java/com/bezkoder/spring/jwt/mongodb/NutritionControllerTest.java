@@ -43,17 +43,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(NutritionController.class)
-@EnableMongoRepositories
+//@EnableMongoRepositories(basePackages = {"com.bezkoder.spring.jwt.mongodb.repository"})
 public class NutritionControllerTest {
 
     @MockBean
     NutritionService nutritionService;
-   /* @MockBean
-    UserProfileUtils userProfileUtils;
-
-    @InjectMocks
-    UserDetailsImpl userDetails;*/
-
 
     ObjectMapper mapper = new ObjectMapper();
 
@@ -67,13 +61,7 @@ public class NutritionControllerTest {
         Supplement supp = new Supplement();
         supp.setName(supplementRequest.getName());
 
-      /*  Set<SimpleGrantedAuthority> authorities = new HashSet<>();
-        authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));*/
-
         when(nutritionService.addNutrition(any(NutritionRequest.class))).thenReturn(supp);
-    /*    when(userProfileUtils.getUserDetails()).thenReturn(new UserDetailsImpl(new ObjectId().toString(),
-                                                        "milkozlatev", "mzlatev@mail.bg", 
-                                                        "123456",authorities, new UserProfile(new Diary())));*/
 
         mockMvc.perform(post("/api/nutrition")
                 .content(mapper.writeValueAsString(supplementRequest))
