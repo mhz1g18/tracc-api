@@ -46,7 +46,7 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
      */
 
     @Query(value = "{ 'id': ?0, 'createdBy' : ?1 }", delete = true)
-    void deleteNutrityionById(String id, String userId);
+    void deleteNutritionById(String id, String userId);
 
     /**
      * Fetches all Nutrition available to a user by type

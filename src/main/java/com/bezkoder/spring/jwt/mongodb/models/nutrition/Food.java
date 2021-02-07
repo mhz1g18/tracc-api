@@ -22,13 +22,13 @@ import java.util.ArrayList;
 public class Food extends Nutrition {
 
     @NotNull
-    private int calories;
-    private int protein;
-    private int carbs;
-    private int sugars;
-    private int fiber;
-    private int fats;
-    private int transfats;
+    private float calories;
+    private float protein;
+    private float carbs;
+    private float sugars;
+    private float fiber;
+    private float fats;
+    private float transfats;
 
     private ArrayList<Supplement> micronutrients = new ArrayList<>();
 
@@ -36,59 +36,59 @@ public class Food extends Nutrition {
         super("FOOD");
     }
 
-    public @NotNull int getCalories() {
+    public float getCalories() {
         return calories;
     }
 
-    public void setCalories(int calories) {
+    public void setCalories(float calories) {
         this.calories = calories;
     }
 
-    public int getProtein() {
+    public float getProtein() {
         return protein;
     }
 
-    public void setProtein(int protein) {
+    public void setProtein(float protein) {
         this.protein = protein;
     }
 
-    public int getCarbs() {
+    public float getCarbs() {
         return carbs;
     }
 
-    public void setCarbs(int carbs) {
+    public void setCarbs(float carbs) {
         this.carbs = carbs;
     }
 
-    public int getSugars() {
+    public float getSugars() {
         return sugars;
     }
 
-    public void setSugars(int sugars) {
+    public void setSugars(float sugars) {
         this.sugars = sugars;
     }
 
-    public int getFats() {
+    public float getFats() {
         return fats;
     }
 
-    public void setFats(int fats) {
+    public void setFats(float fats) {
         this.fats = fats;
     }
 
-    public int getTransfats() {
+    public float getTransfats() {
         return transfats;
     }
 
-    public void setTransfats(int transfats) {
+    public void setTransfats(float transfats) {
         this.transfats = transfats;
     }
 
-    public int getFiber() {
+    public float getFiber() {
         return fiber;
     }
 
-    public void setFiber(int fiber) {
+    public void setFiber(float fiber) {
         this.fiber = fiber;
     }
 

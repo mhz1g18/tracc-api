@@ -1,10 +1,14 @@
 package com.bezkoder.spring.jwt.mongodb.models.diary;
 
 import com.bezkoder.spring.jwt.mongodb.models.nutrition.Food;
+import com.bezkoder.spring.jwt.mongodb.models.nutrition.Supplement;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-public class FoodDiaryEntry extends DiaryEntry {
+public class NutritionDiaryEntry extends DiaryEntry {
 
     private float calories;
     private float protein;
@@ -14,10 +18,13 @@ public class FoodDiaryEntry extends DiaryEntry {
     private float fiber;
     private float transfats;
 
-    private List<Food> foodList;
+    private List<Food> foodList = new ArrayList<>();
+    private List<Supplement> supplementList = new ArrayList<>();
 
-    public FoodDiaryEntry() {
-        super("ENTRY_FOOD");
+    private Set<Supplement> micronutrients = new HashSet<>();
+
+    public NutritionDiaryEntry() {
+        super("ENTRY_NUTRITION");
     }
 
     public float getCalories() {
@@ -34,31 +41,6 @@ public class FoodDiaryEntry extends DiaryEntry {
 
     public void setFoodList(List<Food> foodList) {
         this.foodList = foodList;
-
-        float calories = 0, fiber = 0, protein = 0, carbs = 0, fats = 0, sugars = 0, transfats = 0;
-        /*float quantity;
-
-        for(Food food : foodList) {
-
-            quantity = food.getQuantity();
-
-            calories += food.getCalories() * quantity;
-            protein += food.getProtein()* quantity;
-            carbs += food.getCarbs()* quantity;
-            sugars += food.getSugars()* quantity;
-            fiber += food.getFiber()* quantity;
-            fats += food.getFats()* quantity;
-            transfats += food.getTransfats()* quantity;
-        }*/
-
-        this.calories = calories;
-        this.protein = protein;
-        this.carbs = carbs;
-        this.fats = fats;
-        this.sugars = sugars;
-        this.transfats = transfats;
-        this.fiber = fiber;
-
     }
 
     public float getProtein() {
@@ -107,5 +89,21 @@ public class FoodDiaryEntry extends DiaryEntry {
 
     public void setTransfats(float transfats) {
         this.transfats = transfats;
+    }
+
+    public List<Supplement> getSupplementList() {
+        return supplementList;
+    }
+
+    public void setSupplementList(List<Supplement> supplementList) {
+        this.supplementList = supplementList;
+    }
+
+    public Set<Supplement> getMicronutrients() {
+        return micronutrients;
+    }
+
+    public void setMicronutrients(Set<Supplement> micronutrients) {
+        this.micronutrients = micronutrients;
     }
 }

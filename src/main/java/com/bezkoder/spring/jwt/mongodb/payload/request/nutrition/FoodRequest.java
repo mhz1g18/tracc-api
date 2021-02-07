@@ -11,13 +11,13 @@ import java.util.Map;
  */
 
 public class FoodRequest extends  NutritionRequest{
-    private int calories;
-    private int protein;
-    private int carbohydrates;
-    private int fats;
-    private int fiber;
-    private int sugars;
-    private int transFats;
+    private float calories;
+    private float protein;
+    private float carbohydrates;
+    private float fats;
+    private float fiber;
+    private float sugars;
+    private float transFats;
 
     private Map<String, Integer> micronutrientIds = new HashMap<>();
     private int quantity;
@@ -40,59 +40,59 @@ public class FoodRequest extends  NutritionRequest{
     }
 
 
-    public int getCalories() {
+    public float getCalories() {
         return calories;
     }
 
-    public void setCalories(int calories) {
+    public void setCalories(float calories) {
         this.calories = calories;
     }
 
-    public int getProtein() {
+    public float getProtein() {
         return protein;
     }
 
-    public void setProtein(int protein) {
+    public void setProtein(float protein) {
         this.protein = protein;
     }
 
-    public int getCarbohydrates() {
+    public float getCarbohydrates() {
         return carbohydrates;
     }
 
-    public void setCarbohydrates(int carbohydrates) {
+    public void setCarbohydrates(float carbohydrates) {
         this.carbohydrates = carbohydrates;
     }
 
-    public int getFats() {
+    public float getFats() {
         return fats;
     }
 
-    public void setFats(int fats) {
+    public void setFats(float fats) {
         this.fats = fats;
     }
 
-    public int getFiber() {
+    public float getFiber() {
         return fiber;
     }
 
-    public void setFiber(int fiber) {
+    public void setFiber(float fiber) {
         this.fiber = fiber;
     }
 
-    public int getSugars() {
+    public float getSugars() {
         return sugars;
     }
 
-    public void setSugars(int sugars) {
+    public void setSugars(float sugars) {
         this.sugars = sugars;
     }
 
-    public int getTransFats() {
+    public float getTransFats() {
         return transFats;
     }
 
-    public void setTransFats(int transFats) {
+    public void setTransFats(float transFats) {
         this.transFats = transFats;
     }
 

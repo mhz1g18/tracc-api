@@ -37,13 +37,13 @@ import java.util.List;
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "type")
 @JsonSubTypes({@JsonSubTypes.Type(value = Food.class, name = "FOOD"),
                @JsonSubTypes.Type(value = Supplement.class, name="SUPPLEMENT")})
-@CompoundIndex(def = "{ 'createdBy' : 1, 'id' : 1 }")
+//@CompoundIndex(def = "{ 'createdBy' : 1, 'id' : 1 }")
 abstract public class Nutrition {
 
     @Id
     private String id;
 
-    @Indexed
+    //@Indexed
     private String type;
 
     @NotBlank
@@ -57,9 +57,12 @@ abstract public class Nutrition {
      */
 
     @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-    private int quantity;
+    private int quantity = 100;
 
-    @Indexed
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    private EUnit unit = EUnit.UNIT_G;
+
+    //@Indexed
     @JsonIgnore
     private String createdBy;
 
@@ -130,5 +133,13 @@ abstract public class Nutrition {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public EUnit getUnit() {
+        return unit;
+    }
+
+    public void setUnit(EUnit unit) {
+        this.unit = unit;
     }
 }

@@ -7,7 +7,6 @@ import com.bezkoder.spring.jwt.mongodb.payload.request.nutrition.NutritionReques
 import com.bezkoder.spring.jwt.mongodb.payload.request.nutrition.SupplementRequest;
 import com.bezkoder.spring.jwt.mongodb.repository.nutrition.NutritionCategoryRepository;
 import com.bezkoder.spring.jwt.mongodb.repository.nutrition.NutritionRepository;
-import com.bezkoder.spring.jwt.mongodb.repository.userprofile.UserProfileRepository;
 import com.bezkoder.spring.jwt.mongodb.security.jwt.UserProfileUtils;
 import com.bezkoder.spring.jwt.mongodb.security.services.user.UserDetailsImpl;
 import org.bson.types.ObjectId;
@@ -37,6 +36,11 @@ public class NutritionService {
 
     /**
      * Dependency that have their instances injected by Spring's DI
+     * @NutritionRepository used for persistence do the nutrition collection
+     * @NutritionCategoryRepository used for persistence to the nutrition_categories collection
+     * @MongoTemplate used for some additional queries to the database
+     * @UserProfileUtils used for information regarding the user
+     *                   extracted from Spring Security's context
      */
 
     private final NutritionRepository nutritionRepository;
@@ -142,7 +146,7 @@ public class NutritionService {
 
         Optional<Nutrition> nutrition = nutritionRepository.getNutritionById(id, userId);
 
-        nutritionRepository.deleteNutrityionById(id, userId);
+        nutritionRepository.deleteNutritionById(id, userId);
 
         // Remove the nutrition from Lists in the categories
 
@@ -263,6 +267,11 @@ public class NutritionService {
         return nutritionCategoryRepository.save(category);
     }
 
+    /**
+     * Parse a NutritionRequest in order to construct a Nutrition object
+     * @param nutritionRequest NutritionRequest to be parsed
+     * @return the constructed Nutrition object
+     */
 
     private Nutrition parseNutritionRequest(NutritionRequest nutritionRequest) {
         Nutrition nutrition;

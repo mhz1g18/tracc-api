@@ -1,19 +1,24 @@
 package com.bezkoder.spring.jwt.mongodb.models.diary;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.fasterxml.jackson.annotation.JsonTypeInfo.*;
-import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.util.Date;
 
-@JsonTypeInfo(use = Id.NAME, include = As.PROPERTY, property = "type")
+@Document(collection = "diary_entries")
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "type")
 @JsonSubTypes({@JsonSubTypes.Type(value = SleepDiaryEntry.class, name = "ENTRY_SLEEP"),
-               @JsonSubTypes.Type(value = FoodDiaryEntry.class, name = "ENTRY_FOOD")})
+               @JsonSubTypes.Type(value = NutritionDiaryEntry.class, name = "ENTRY_NUTRITION")})
 public abstract class DiaryEntry {
 
-    private ObjectId id = new ObjectId();
+    @Id
+    private String id;
+
+    @JsonIgnore
+    private String createdBy;
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private Date timestamp = new Date();
@@ -27,7 +32,7 @@ public abstract class DiaryEntry {
     public DiaryEntry() {}
 
     public String getId() {
-        return id.toString();
+        return id;
     }
 
     public Date getTimestamp() {
@@ -44,5 +49,17 @@ public abstract class DiaryEntry {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

@@ -34,11 +34,10 @@ public class User {
   @DBRef
   private UserProfile profile_id;
 
-  public User(String username, String email, String password, UserProfile profile_id) {
+  public User(String username, String email, String password) {
     this.username = username;
     this.email = email;
     this.password = password;
-    this.profile_id = profile_id;
   }
 
   public String getId() {

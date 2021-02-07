@@ -125,14 +125,16 @@ public class AuthController {
 		}
 
 		// Create new user's account
-		UserProfile userProfile = userProfileService.createNewProfile();
 		User user = new User(signUpRequest.getUsername(),
 				signUpRequest.getEmail(),
-				encoder.encode(signUpRequest.getPassword()),
-				userProfile);
+				encoder.encode(signUpRequest.getPassword()));
 
 		user.setRoles(roles);
-		userService.save(user);
+		User registered = userService.save(user);
+		UserProfile userProfile = userProfileService.createNewProfile(registered.getId());
+
+		registered.setProfileId(userProfile);
+		userService.save(registered);
 
 		return ResponseEntity.ok(new MessageResponse("success", "User registered"));
 	}

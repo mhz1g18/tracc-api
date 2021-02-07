@@ -1,7 +1,9 @@
 package com.bezkoder.spring.jwt.mongodb.security.services.userprofile;
 
+import com.bezkoder.spring.jwt.mongodb.exceptions.diary.DiaryNotFoundException;
 import com.bezkoder.spring.jwt.mongodb.exceptions.userprofile.ProfileNotFoundException;
 import com.bezkoder.spring.jwt.mongodb.models.diary.Diary;
+import com.bezkoder.spring.jwt.mongodb.models.user.UserInfo;
 import com.bezkoder.spring.jwt.mongodb.models.user.UserProfile;
 import com.bezkoder.spring.jwt.mongodb.repository.diary.DiaryRepository;
 import com.bezkoder.spring.jwt.mongodb.repository.userprofile.UserProfileRepository;
@@ -14,7 +16,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class UserProfileService {
+public class  UserProfileService {
 
     private final UserProfileRepository userProfileRepository;
     private final DiaryRepository diaryRepository;
@@ -29,23 +31,26 @@ public class UserProfileService {
         this.userProfileUtils = userProfileUtils;
     }
 
-    public UserProfile createNewProfile() {
-        Diary userDiary = diaryRepository.save(new Diary());
-        UserProfile userProfile = new UserProfile(userDiary);
+    public UserProfile createNewProfile(String userId) {
+        Diary userDiary = diaryRepository.save(new Diary(userId));
+        UserProfile userProfile = new UserProfile(userId, userDiary.getId());
         return userProfileRepository.save(userProfile);
     }
 
-    public Optional<UserProfile> findProfileById(String id) {
-        return userProfileRepository.findById(id);
+    public UserProfile findProfileById(String id) {
+        return userProfileRepository.findById(id)
+                .orElseThrow(() -> new ProfileNotFoundException(id));
     }
 
-    public Diary getUserDiary() {
-        UserDetailsImpl userDetails = userProfileUtils.getUserDetails();
-
-        UserProfile userProfile = this.findProfileById(userDetails.getProfileId().getId())
-                .orElseThrow(() -> new ProfileNotFoundException(userDetails.getProfileId().getId()));
-
-        return userProfile.getDiaryId();
+    public UserProfile findProfileByUserid() {
+        String id = userProfileUtils.getUserDetails().getId();
+        return userProfileRepository.findByUserId(id)
+                .orElseThrow(() -> new ProfileNotFoundException(id));
     }
 
+    public UserProfile setUserInfo(UserInfo userInfo) {
+        UserProfile profile = findProfileByUserid();
+        profile.setUserInfo(userInfo);
+        return userProfileRepository.save(profile);
+    }
 }

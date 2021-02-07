@@ -14,13 +14,17 @@ public class UserProfile {
     @Id
     private String id;
 
-    @DBRef
-    private Diary diary_id;
+    private String userId;
 
-    @DBRef
-    private List<Nutrition> custom_nutrition = new ArrayList<>();
+    private String diary_id;
 
-    public UserProfile(Diary diary_id) {
+    private UserInfo userInfo;
+
+    /* @DBRef
+    private List<Nutrition> custom_nutrition = new ArrayList<>();*/
+
+    public UserProfile(String userId, String diary_id) {
+        this.userId = userId;
         this.diary_id = diary_id;
     }
 
@@ -32,19 +36,35 @@ public class UserProfile {
         this.id = id;
     }
 
-    public Diary getDiaryId() {
+    public String getDiaryId() {
         return diary_id;
     }
 
-    public void setDiaryId(Diary diary_id) {
+    public void setDiaryId(String diary_id) {
         this.diary_id = diary_id;
     }
 
-    public List<Nutrition> getCustomNutrition() {
+/*    public List<Nutrition> getCustomNutrition() {
         return custom_nutrition;
     }
 
     public void setCustomNutrition(List<Nutrition> custom_nutrition) {
         this.custom_nutrition = custom_nutrition;
+    }*/
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
 }
