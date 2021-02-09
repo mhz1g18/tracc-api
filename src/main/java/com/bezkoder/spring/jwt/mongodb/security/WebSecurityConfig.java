@@ -8,12 +8,8 @@
 
 package com.bezkoder.spring.jwt.mongodb.security;
 
-import com.bezkoder.spring.jwt.mongodb.repository.user.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -32,8 +28,6 @@ import com.bezkoder.spring.jwt.mongodb.security.jwt.AuthEntryPointJwt;
 import com.bezkoder.spring.jwt.mongodb.security.jwt.AuthTokenFilter;
 import com.bezkoder.spring.jwt.mongodb.security.services.user.UserDetailsServiceImpl;
 
-import javax.management.MXBean;
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
@@ -45,6 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	/*@Autowired
 	private  UserDetailsServiceImpl userDetailsService;*/
+
 
 	@Bean
 	@Override

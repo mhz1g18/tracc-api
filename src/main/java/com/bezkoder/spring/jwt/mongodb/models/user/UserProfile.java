@@ -23,10 +23,20 @@ public class UserProfile {
     /* @DBRef
     private List<Nutrition> custom_nutrition = new ArrayList<>();*/
 
+    public UserProfile(String userId, String diary_id, UserInfo userInfo) {
+        this.userId = userId;
+        this.diary_id = diary_id;
+        this.userInfo = userInfo;
+    }
+
     public UserProfile(String userId, String diary_id) {
         this.userId = userId;
         this.diary_id = diary_id;
+        this.userInfo = new UserInfo();
     }
+
+    public UserProfile() {}
+
 
     public String getId() {
         return id;
