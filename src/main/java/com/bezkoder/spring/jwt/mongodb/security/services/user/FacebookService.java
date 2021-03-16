@@ -3,6 +3,7 @@ package com.bezkoder.spring.jwt.mongodb.security.services.user;
 import com.bezkoder.spring.jwt.mongodb.client.FacebookClient;
 import com.bezkoder.spring.jwt.mongodb.models.user.FacebookUser;
 import com.bezkoder.spring.jwt.mongodb.models.user.User;
+import com.bezkoder.spring.jwt.mongodb.models.user.UserInfo;
 import com.bezkoder.spring.jwt.mongodb.payload.response.JwtResponse;
 import com.bezkoder.spring.jwt.mongodb.repository.user.UserRepository;
 import com.bezkoder.spring.jwt.mongodb.security.jwt.JwtUtils;
@@ -26,7 +27,6 @@ public class FacebookService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtils jwtUtils;
 
-
     public FacebookService(FacebookClient fbClient, UserRepository userRepository, UserService userService, AuthenticationManager authenticationManager, JwtUtils jwtUtils) {
         this.fbClient = fbClient;
         this.userRepository = userRepository;
@@ -35,12 +35,13 @@ public class FacebookService {
         this.jwtUtils = jwtUtils;
     }
 
-    public JwtResponse loginUser(String fbAccessToken) {
+    public JwtResponse loginUser(String fbAccessToken, UserInfo userInfo) {
 
         FacebookUser fbUser = fbClient.getUser(fbAccessToken);
         String token;
+
         return userService.findById(fbUser.getId())
-                .or(() -> Optional.ofNullable(userService.registerUser(convertTo(fbUser))))
+                .or(() -> Optional.ofNullable(userService.registerUser(convertTo(fbUser), userInfo)))
                 .map(UserDetailsImpl::build)
                 .map(userDetails -> new UsernamePasswordAuthenticationToken(
                         userDetails, null, userDetails.getAuthorities()))
@@ -64,26 +65,6 @@ public class FacebookService {
                 })
                 .orElseThrow(() ->
                         new IllegalStateException("unable to login facebook user id " + fbUser.getId()));
-        /*System.out.println(fbUser.getId());
-        User user = userService.findById(fbUser.getId())
-                               .orElse(userService.registerUser(convertTo(fbUser)));
-
-
-        UserDetailsImpl userDetails = UserDetailsImpl.build(user);
-        Authentication auth = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(userDetails, null));
-
-        SecurityContextHolder.getContext().setAuthentication(auth);
-        String jwt = jwtUtils.generateJwtToken(auth);
-        List<String> roles = userDetails.getAuthorities().stream()
-                                        .map(item -> item.getAuthority())
-                                        .collect(Collectors.toList());
-
-        return new JwtResponse(jwt,
-                userDetails.getId(),
-                userDetails.getUsername(),
-                userDetails.getEmail(),
-                roles,
-                userDetails.getProfileId());*/
 
     }
 

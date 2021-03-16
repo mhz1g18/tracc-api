@@ -56,14 +56,13 @@ abstract public class Nutrition {
      * Used when Nutrition is in micronutrients array of Food
      */
 
-    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    //@JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private int quantity = 100;
 
-    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    //@JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private EUnit unit = EUnit.UNIT_G;
 
     //@Indexed
-    @JsonIgnore
     private String createdBy;
 
     private List<String> categories = new ArrayList<>();

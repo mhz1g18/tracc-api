@@ -31,9 +31,9 @@ public class  UserProfileService {
         this.userProfileUtils = userProfileUtils;
     }
 
-    public UserProfile createNewProfile(String userId) {
+    public UserProfile createNewProfile(String userId, UserInfo userInfo) {
         Diary userDiary = diaryRepository.save(new Diary(userId));
-        UserProfile userProfile = new UserProfile(userId, userDiary.getId());
+        UserProfile userProfile = new UserProfile(userId, userDiary.getId(), userInfo);
         return userProfileRepository.save(userProfile);
     }
 

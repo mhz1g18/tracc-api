@@ -32,18 +32,18 @@ public class UserDetailsImpl implements UserDetails {
 	@JsonIgnore
 	private String password;
 
-	private UserProfile profile_id;
+	private UserProfile profile;
 
 	private Collection<? extends GrantedAuthority> authorities;
 
 	public UserDetailsImpl(String id, String username, String email, String password,
-			Collection<? extends GrantedAuthority> authorities, UserProfile profile_id) {
+			Collection<? extends GrantedAuthority> authorities, UserProfile profile) {
 		this.id = id;
 		this.username = username;
 		this.email = email;
 		this.password = password;
 		this.authorities = authorities;
-		this.profile_id = profile_id;
+		this.profile = profile;
 	}
 
 	public static UserDetailsImpl build(User user) {
@@ -118,10 +118,10 @@ public class UserDetailsImpl implements UserDetails {
 	}
 
 	public UserProfile getProfileId() {
-		return profile_id;
+		return profile;
 	}
 
 	public void setProfileId(UserProfile profile_id) {
-		this.profile_id = profile_id;
+		this.profile = profile_id;
 	}
 }

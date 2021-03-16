@@ -1,17 +1,19 @@
 package com.bezkoder.spring.jwt.mongodb.models.user;
 
+import java.time.LocalDate;
+
 public class UserInfo {
 
     private String name;
-    private int age;
+    private LocalDate dateOfBirth;
     private float weight;
     private int height;
 
     public UserInfo() {}
 
-    public UserInfo(String name, int age, float weight, int height) {
+    public UserInfo(String name, LocalDate dateOfBirth, float weight, int height) {
         this.name = name;
-        this.age = age;
+        this.dateOfBirth = dateOfBirth;
         this.weight = weight;
         this.height = height;
     }
@@ -24,12 +26,12 @@ public class UserInfo {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public float getWeight() {

@@ -1,6 +1,7 @@
 package com.bezkoder.spring.jwt.mongodb.models.diary;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.springframework.data.annotation.Id;
@@ -17,7 +18,6 @@ public abstract class DiaryEntry {
     @Id
     private String id;
 
-    @JsonIgnore
     private String createdBy;
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)

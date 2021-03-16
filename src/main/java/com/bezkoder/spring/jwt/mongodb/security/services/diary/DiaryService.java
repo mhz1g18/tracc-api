@@ -127,6 +127,27 @@ public class DiaryService {
     }
 
     /**
+     * Retrieve diary entries for a specific date
+     * @param date the date to query by
+     * @return DiaryEntryList containing entries for that date
+     *         if no entries for that date exist return an empty DiaryEntryList
+     */
+
+    public List<DiaryEntry> getEntriesByType(String type) {
+
+        String userId = userProfileUtils.getUserDetails().getId();
+
+        Query query = new Query();
+        query.addCriteria(Criteria.where("type").is(type).and("createdBy").is(userId));
+
+        List<DiaryEntry> d =  mongoTemplate.find(query, DiaryEntry.class);
+
+        return d;
+
+    }
+
+
+    /**
      * Persist a diary entry to the diary_entries collection
      * and add a reference to it in the user's diary entries list
      *

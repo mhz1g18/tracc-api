@@ -1,5 +1,7 @@
 package com.bezkoder.spring.jwt.mongodb.payload.request;
 
+import com.bezkoder.spring.jwt.mongodb.models.user.UserInfo;
+
 import java.util.Set;
 
 import javax.validation.constraints.*;
@@ -9,7 +11,6 @@ public class SignupRequest {
     @Size(min = 3, max = 20)
     private String username;
  
-    @NotBlank
     @Size(max = 50)
     @Email
     private String email;
@@ -19,6 +20,8 @@ public class SignupRequest {
     @NotBlank
     @Size(min = 6, max = 40)
     private String password;
+
+    private UserInfo userInfo;
   
     public String getUsername() {
         return username;
@@ -50,5 +53,13 @@ public class SignupRequest {
     
     public void setRole(Set<String> roles) {
       this.roles = roles;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
 }

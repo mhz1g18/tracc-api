@@ -13,7 +13,7 @@ import java.util.Map;
 public class FoodRequest extends  NutritionRequest{
     private float calories;
     private float protein;
-    private float carbohydrates;
+    private float carbs;
     private float fats;
     private float fiber;
     private float sugars;
@@ -31,7 +31,7 @@ public class FoodRequest extends  NutritionRequest{
         super("FOOD");
         this.calories = calories;
         this.protein = protein;
-        this.carbohydrates = carbohydrates;
+        this.carbs = carbohydrates;
         this.fats = fats;
         this.fiber = fiber;
         this.sugars = sugars;
@@ -56,12 +56,12 @@ public class FoodRequest extends  NutritionRequest{
         this.protein = protein;
     }
 
-    public float getCarbohydrates() {
-        return carbohydrates;
+    public float getCarbs() {
+        return carbs;
     }
 
-    public void setCarbohydrates(float carbohydrates) {
-        this.carbohydrates = carbohydrates;
+    public void setCarbs(float carbs) {
+        this.carbs = carbs;
     }
 
     public float getFats() {

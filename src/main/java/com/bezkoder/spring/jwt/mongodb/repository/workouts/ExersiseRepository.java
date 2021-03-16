@@ -1,42 +1,40 @@
-package com.bezkoder.spring.jwt.mongodb.repository.nutrition;
+package com.bezkoder.spring.jwt.mongodb.repository.workouts;
 
 import com.bezkoder.spring.jwt.mongodb.models.nutrition.Nutrition;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.bezkoder.spring.jwt.mongodb.models.workouts.Exercise;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Qualifier("MongoRepo")
-public interface NutritionRepository extends MongoRepository<Nutrition, String> {
+public interface ExersiseRepository extends MongoRepository<Exercise, String> {
 
     /**
-     * Fetches all nutrition available to user with id same as the parameter
-     * Available nutrition to an user is created by the user or an ADMIN
+     * Fetches all exercises available to user with id same as the parameter
+     * Available exercises to an user is created by the user or an ADMIN
      *
      * @param userId the user's id
      * @return list of nutrition
      */
 
     @Query("{ $or: [ { 'createdBy' : ?0 }, {  'createdBy': 'ADMIN' } ] } ")
-    List<Nutrition> getAllNutrition(String userId);
+    List<Exercise> getAllExercises(String userId);
 
     /**
-     * Fetches specific nutrition by id
-     * Available nutrition to an user is created by the user or an ADMIN
+     * Fetches specific exercise by id
+     * Available exercise to an user is created by the user or an ADMIN
      *
-     * @param id the nutrition's id
+     * @param id the exercise's id
      * @param userId the user's id
      * @return Nutrition object wrapped in Optional
      */
 
     @Query("{ $or: [ { 'id': ?0, 'createdBy' : ?1 }, { 'id': ?0, 'createdBy' : 'ADMIN' } ] }")
-    Optional<Nutrition> getNutritionById(String id, String userId);
+    Optional<Exercise> getExerciseById(String id, String userId);
 
     /**
-     * Deletes specific nutrition by id
+     * Deletes specific exercise by id
      * A user can delete nutrition created by the user
      *
      * @param id the nutrition's id
@@ -46,19 +44,19 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
      */
 
     @Query(value = "{ 'id': ?0, 'createdBy' : ?1 }", delete = true)
-    void deleteNutritionById(String id, String userId);
+    void deleteExerciseById(String id, String userId);
 
     /**
-     * Fetches all Nutrition available to a user by type
+     * Fetches all Exercises available to a user by type
      *
      * @return List of results
      */
 
     @Query("{ 'type': ?0 }")
-    List<Nutrition> findNutritionByType(String type);
+    List<Exercise> findExerciseByType(String type);
 
     /**
-     * Searches for Nutrition  performing a
+     * Searches for Exercise  performing a
      * regex based search on the name field
      * search is case insensitive
      *
@@ -66,9 +64,9 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
      */
 
     @Query("{ 'name': { $regex: ?0, $options:'i' } }")
-    List<Nutrition> findByName(String name);
+    List<Exercise> findByName(String name);
 
-
-
+    @Query("{ 'category': ?0 }")
+    public List<Exercise> findByCategory(String category);
 
 }

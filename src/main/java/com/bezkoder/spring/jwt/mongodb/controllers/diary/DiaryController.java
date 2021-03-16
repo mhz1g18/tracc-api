@@ -1,6 +1,12 @@
 package com.bezkoder.spring.jwt.mongodb.controllers.diary;
 
 import com.bezkoder.spring.jwt.mongodb.models.diary.Diary;
+import com.bezkoder.spring.jwt.mongodb.models.diary.DiaryEntry;
+import com.bezkoder.spring.jwt.mongodb.models.diary.DiaryEntryList;
+import com.bezkoder.spring.jwt.mongodb.models.diary.NutritionDiaryEntry;
+import com.bezkoder.spring.jwt.mongodb.models.nutrition.Food;
+import com.bezkoder.spring.jwt.mongodb.models.nutrition.Nutrition;
+import com.bezkoder.spring.jwt.mongodb.models.nutrition.Supplement;
 import com.bezkoder.spring.jwt.mongodb.payload.request.diary.DiaryEntryRequest;
 import com.bezkoder.spring.jwt.mongodb.security.services.diary.DiaryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +17,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * DiaryController
@@ -67,6 +77,13 @@ public class DiaryController {
 		return ResponseEntity.ok(diary.getEntries());
 	}
 
+	@GetMapping(value = "/diary/entries", params = "type")
+	public ResponseEntity<?> findByDate(String type) {
+
+		return ResponseEntity.ok(diaryService.getEntriesByType(type));
+
+	}
+
 	/**
 	 * Retrieve a list of entries for a specific date
 	 * @param date the specified date
@@ -74,7 +91,7 @@ public class DiaryController {
 	 */
 
 	@GetMapping(value = "/diary/entries", params = "date")
-	public ResponseEntity<?> findByType(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+	public ResponseEntity<?> findByDate(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
 		return ResponseEntity.ok(diaryService.getDiaryEntriesByDate(date));
 	}
 

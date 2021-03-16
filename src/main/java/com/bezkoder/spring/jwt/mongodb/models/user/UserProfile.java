@@ -1,13 +1,7 @@
 package com.bezkoder.spring.jwt.mongodb.models.user;
 
-import com.bezkoder.spring.jwt.mongodb.models.diary.Diary;
-import com.bezkoder.spring.jwt.mongodb.models.nutrition.Nutrition;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Document(collection = "user_profiles")
 public class UserProfile {
@@ -16,22 +10,19 @@ public class UserProfile {
 
     private String userId;
 
-    private String diary_id;
+    private String diaryId;
 
     private UserInfo userInfo;
 
-    /* @DBRef
-    private List<Nutrition> custom_nutrition = new ArrayList<>();*/
-
-    public UserProfile(String userId, String diary_id, UserInfo userInfo) {
+    public UserProfile(String userId, String diaryId, UserInfo userInfo) {
         this.userId = userId;
-        this.diary_id = diary_id;
+        this.diaryId = diaryId;
         this.userInfo = userInfo;
     }
 
     public UserProfile(String userId, String diary_id) {
         this.userId = userId;
-        this.diary_id = diary_id;
+        this.diaryId = diary_id;
         this.userInfo = new UserInfo();
     }
 
@@ -47,20 +38,12 @@ public class UserProfile {
     }
 
     public String getDiaryId() {
-        return diary_id;
+        return diaryId;
     }
 
     public void setDiaryId(String diary_id) {
-        this.diary_id = diary_id;
+        this.diaryId = diary_id;
     }
-
-/*    public List<Nutrition> getCustomNutrition() {
-        return custom_nutrition;
-    }
-
-    public void setCustomNutrition(List<Nutrition> custom_nutrition) {
-        this.custom_nutrition = custom_nutrition;
-    }*/
 
     public String getUserId() {
         return userId;

@@ -1,9 +1,6 @@
 package com.bezkoder.spring.jwt.mongodb.security.services.user;
 
-import com.bezkoder.spring.jwt.mongodb.models.user.ERole;
-import com.bezkoder.spring.jwt.mongodb.models.user.Role;
-import com.bezkoder.spring.jwt.mongodb.models.user.User;
-import com.bezkoder.spring.jwt.mongodb.models.user.UserProfile;
+import com.bezkoder.spring.jwt.mongodb.models.user.*;
 import com.bezkoder.spring.jwt.mongodb.payload.request.SignupRequest;
 import com.bezkoder.spring.jwt.mongodb.payload.response.JwtResponse;
 import com.bezkoder.spring.jwt.mongodb.repository.user.RoleRepository;
@@ -14,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -44,7 +42,7 @@ public class UserService {
         this.userProfileService = userProfileService;
     }
 
-    public JwtResponse loginUser(String username, String password) {
+    public JwtResponse loginUser(String username, String password) throws AuthenticationException {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(username, password));
 
@@ -65,55 +63,27 @@ public class UserService {
                 userDetails.getProfileId());
     }
 
-    public User registerUser(User user) {
+    public User registerUser(User user, UserInfo userInfo) {
         if (userRepository.existsByUsername(user.getUsername())) {
             throw new IllegalStateException("Username taken");
         }
 
-        if (userRepository.existsByEmail(user.getEmail())) {
+        /*if (userRepository.existsByEmail(user.getEmail())) {
             throw new IllegalStateException("Email taken");
+        }*/
+
+        if(userInfo == null) {
+            userInfo = new UserInfo();
         }
 
         //Set<String> strRoles = signUpRequest.getRoles();
         Set<Role> roles = new HashSet<>();
         roles.add(roleRepository.findByName(ERole.ROLE_USER).orElseThrow(() -> new RuntimeException("Error setting role")));
 
-        /*if (strRoles == null) {
-            Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-                    .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-            roles.add(userRole);
-        } else {
-            strRoles.forEach(role -> {
-                switch (role) {
-                    case "admin":
-                        Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(adminRole);
-
-                        break;
-                    case "mod":
-                        Role modRole = roleRepository.findByName(ERole.ROLE_MODERATOR)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(modRole);
-
-                        break;
-                    default:
-                        Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-                                .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
-                        roles.add(userRole);
-                }
-            });
-        }*/
-
-        // Create new user's account
-        /*User user = new User(signUpRequest.getUsername(),
-                signUpRequest.getEmail(),
-                passwordEncoder.encode(signUpRequest.getPassword()));*/
-
         user.setRoles(roles);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         User registered = userRepository.save(user);
-        UserProfile userProfile = userProfileService.createNewProfile(registered.getId());
+        UserProfile userProfile = userProfileService.createNewProfile(registered.getId(), userInfo);
 
         registered.setProfileId(userProfile);
         return userRepository.save(registered);

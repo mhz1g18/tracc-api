@@ -300,7 +300,7 @@ public class NutritionService {
             // x = foodRequest.getCalories() * 100 / quanityGrams
             ((Food) nutrition).setCalories(coef * castRequest.getCalories() / quantity);
             ((Food) nutrition).setProtein(coef * castRequest.getProtein() / quantity);
-            ((Food) nutrition).setCarbs(coef * castRequest.getCarbohydrates() / quantity);
+            ((Food) nutrition).setCarbs(coef * castRequest.getCarbs() / quantity);
             ((Food) nutrition).setFats(coef * castRequest.getFats() / quantity);
             ((Food) nutrition).setTransfats(coef * castRequest.getTransFats() / quantity);
             ((Food) nutrition).setFiber(coef * castRequest.getFiber() / quantity);
@@ -311,6 +311,16 @@ public class NutritionService {
 
             Query findSupplements = new Query(Criteria.where("id").in(micros.keySet()));
             List<Supplement> supplements = mongoTemplate.find(findSupplements, Supplement.class);
+
+            System.out.println("Ids in request:");
+            for(String key : micros.keySet()) {
+                System.out.println(key);
+            }
+
+            System.out.println("found supps");
+            for(Supplement supp : supplements) {
+                System.out.println(supp.getName());
+            }
 
             supplements.forEach(supplement -> supplement.setQuantity(coef * micros.get(supplement.getId()) / castRequest.getQuantity() ));
 
