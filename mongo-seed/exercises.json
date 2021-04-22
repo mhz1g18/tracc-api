@@ -1,0 +1,265 @@
+[
+  {
+    "type": "STRENGTH",
+    "name": "Squat",
+    "createdBy": "ADMIN",
+    "category": "QUADS",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "name": "Leg Press",
+    "createdBy": "ADMIN",
+    "category": "QUADS",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "QUADS",
+    "name": "Leg Extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "HAMSTRINGS",
+    "name": "Leg Curl",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "HAMSTRINGS",
+    "name": "Romanian Deadlift",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "GLUTES",
+    "name": "Hip Thrust",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "GLUTES",
+    "name": "Hip Abduction",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CHEST",
+    "name": "Incline Bench Press",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CHEST",
+    "name": "Bench Press",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CHEST",
+    "name": "Dips",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CHEST",
+    "name": "Push Ups",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CHEST",
+    "name": "Chest Flye",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "SHOULDERS",
+    "name": "Military Press",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "SHOULDERS",
+    "name": "Dumbbell Shoulder Press",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "SHOULDERS",
+    "name": "Face Pull",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "SHOULDERS",
+    "name": "Lateral Dumbbell Raise",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "SHOULDERS",
+    "name": "Rear Delt Flyes",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "TRICEPS",
+    "name": "Cable extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "TRICEPS",
+    "name": "Dumbbell Tricep Extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BICEPS",
+    "name": "Dumbbell Bicep Curl",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BICEPS",
+    "name": "Cable Bicep Curl",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BICEPS",
+    "name": "Barbell Bicep Curl",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Deadlift",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Pull Up",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Lat Pulldown",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Barbell Row",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Chest Supported Row",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Dumbbell Row",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "BACK",
+    "name": "Pullover",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CALVES",
+    "name": "Standing Calf Extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "CALVES",
+    "name": "Seated Calf Extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "FOREARMS",
+    "name": "Forearm Flexion",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "FOREARMS",
+    "name": "Forearm Extension",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "ABS",
+    "name": "Cable Crunch",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "STRENGTH",
+    "createdBy": "ADMIN",
+    "category": "ABS",
+    "name": "Leg Raises",
+    "_class": "com.tracc.models.workouts.StrengthExercise"
+  },
+  {
+    "type": "CARDIO",
+    "createdBy": "ADMIN",
+    "name": "Running",
+    "_class": "com.tracc.models.workouts.CardioExercise"
+  },
+  {
+    "type": "CARDIO",
+    "createdBy": "ADMIN",
+    "name": "Biking",
+    "_class": "com.tracc.models.workouts.CardioExercise"
+  },
+  {
+    "type": "CARDIO",
+    "createdBy": "ADMIN",
+    "name": "Swimming",
+    "_class": "com.tracc.models.workouts.CardioExercise"
+  }
+]

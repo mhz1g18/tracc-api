@@ -1,0 +1,17 @@
+services:
+  trakkdb:
+    image: mongo:latest
+    container_name: trakkdb
+    ports:
+      - 27017:27017
+  mongo-seed:
+    build: ./mongo-seed
+    links:
+      - trakkdb
+  traccapi:
+    image: tracc-api
+    container_name: traccapi
+    ports:
+      - 8080:8080
+    links:
+      - trakkdb
