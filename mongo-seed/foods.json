@@ -1,0 +1,1302 @@
+[
+  {
+    "name":"Hummus, commercial",
+    "createdBy":"ADMIN",
+    "calories":242.9,
+    "quantity":100,
+    "protein":7.35,
+    "carbs":14.9,
+    "fats":17.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, fuji, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":64.84,
+    "quantity":100,
+    "protein":0.15,
+    "carbs":15.7,
+    "fats":0.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, gala, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.07,
+    "quantity":100,
+    "protein":0.13,
+    "carbs":14.8,
+    "fats":0.15,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, granny smith, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":59.14,
+    "quantity":100,
+    "protein":0.27,
+    "carbs":14.2,
+    "fats":0.14,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, honeycrisp, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":60.1,
+    "quantity":100,
+    "protein":0.1,
+    "carbs":14.7,
+    "fats":0.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, red delicious, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.85,
+    "quantity":100,
+    "protein":0.19,
+    "carbs":14.8,
+    "fats":0.21,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, overripe, raw",
+    "createdBy":"ADMIN",
+    "calories":85.3,
+    "quantity":100,
+    "protein":0.73,
+    "carbs":20.1,
+    "fats":0.22,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, ripe and slightly ripe, raw",
+    "createdBy":"ADMIN",
+    "calories":97.57,
+    "quantity":100,
+    "protein":0.74,
+    "carbs":23.0,
+    "fats":0.29,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Black (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":110.65,
+    "quantity":100,
+    "protein":24.4,
+    "carbs":0,
+    "fats":1.45,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Brown (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":112.48,
+    "quantity":100,
+    "protein":25.6,
+    "carbs":0,
+    "fats":1.12,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Carioca (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":113.76,
+    "quantity":100,
+    "protein":25.2,
+    "carbs":0,
+    "fats":1.44,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Cranberry (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":108.67,
+    "quantity":100,
+    "protein":24.4,
+    "carbs":0,
+    "fats":1.23,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Dark Red Kidney (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":115.39,
+    "quantity":100,
+    "protein":25.9,
+    "carbs":0,
+    "fats":1.31,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Flor de Mayo (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":100.94,
+    "quantity":100,
+    "protein":23.3,
+    "carbs":0,
+    "fats":0.86,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Great Northern (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.96,
+    "quantity":100,
+    "protein":24.7,
+    "carbs":0,
+    "fats":1.24,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Light Red Kidney (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.27,
+    "quantity":100,
+    "protein":25.0,
+    "carbs":0,
+    "fats":1.03,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Light Tan (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.92,
+    "quantity":100,
+    "protein":24.6,
+    "carbs":0,
+    "fats":1.28,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Medium Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":111.36,
+    "quantity":100,
+    "protein":25.5,
+    "carbs":0,
+    "fats":1.04,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Navy (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.99,
+    "quantity":100,
+    "protein":24.1,
+    "carbs":0,
+    "fats":1.51,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Pink (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":104.4,
+    "quantity":100,
+    "protein":23.4,
+    "carbs":0,
+    "fats":1.2,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Pinto (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":105.96,
+    "quantity":100,
+    "protein":23.7,
+    "carbs":0,
+    "fats":1.24,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":95.64,
+    "quantity":100,
+    "protein":21.3,
+    "carbs":0,
+    "fats":1.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Small Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":105.52,
+    "quantity":100,
+    "protein":23.5,
+    "carbs":0,
+    "fats":1.28,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Small White (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.88,
+    "quantity":100,
+    "protein":24.5,
+    "carbs":0,
+    "fats":1.32,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Tan (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":117.46,
+    "quantity":100,
+    "protein":26.8,
+    "carbs":0,
+    "fats":1.14,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, snap, green, canned, regular pack, drained solids",
+    "createdBy":"ADMIN",
+    "calories":24.11,
+    "quantity":100,
+    "protein":1.04,
+    "carbs":4.11,
+    "fats":0.39,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0\" fat, select, cooked, roasted",
+    "createdBy":"ADMIN",
+    "calories":168.04,
+    "quantity":100,
+    "protein":27.7,
+    "carbs":0.0,
+    "fats":6.36,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8\" fat, choice, raw",
+    "createdBy":"ADMIN",
+    "calories":148.71,
+    "quantity":100,
+    "protein":22.8,
+    "carbs":0.0,
+    "fats":6.39,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+    "createdBy":"ADMIN",
+    "calories":115.92,
+    "quantity":100,
+    "protein":23.4,
+    "carbs":0.0,
+    "fats":2.48,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, round, top round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+    "createdBy":"ADMIN",
+    "calories":116.49,
+    "quantity":100,
+    "protein":23.7,
+    "carbs":0.0,
+    "fats":2.41,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8\" fat, select, raw",
+    "createdBy":"ADMIN",
+    "calories":138.68,
+    "quantity":100,
+    "protein":22.7,
+    "carbs":0.0,
+    "fats":5.32,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8\" fat, choice, cooked, grilled",
+    "createdBy":"ADMIN",
+    "calories":211.8,
+    "quantity":100,
+    "protein":27.3,
+    "carbs":0.0,
+    "fats":11.4,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bread, white, commercially prepared",
+    "createdBy":"ADMIN",
+    "calories":266.83,
+    "quantity":100,
+    "protein":9.43,
+    "carbs":49.2,
+    "fats":3.59,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bread, whole-wheat, commercially prepared",
+    "createdBy":"ADMIN",
+    "calories":253.55,
+    "quantity":100,
+    "protein":12.3,
+    "carbs":43.1,
+    "fats":3.55,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Broccoli, raw",
+    "createdBy":"ADMIN",
+    "calories":38.42,
+    "quantity":100,
+    "protein":2.57,
+    "carbs":6.27,
+    "fats":0.34,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, salted",
+    "createdBy":"ADMIN",
+    "calories":739.8,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":82.2,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, unsalted",
+    "createdBy":"ADMIN",
+    "calories":733.5,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":81.5,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Carrots, frozen, unprepared",
+    "createdBy":"ADMIN",
+    "calories":39.15,
+    "quantity":100,
+    "protein":0.81,
+    "carbs":7.92,
+    "fats":0.47,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, American, restaurant",
+    "createdBy":"ADMIN",
+    "calories":375.3,
+    "quantity":100,
+    "protein":17.5,
+    "carbs":6.35,
+    "fats":31.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, cheddar",
+    "createdBy":"ADMIN",
+    "calories":408.96,
+    "quantity":100,
+    "protein":23.3,
+    "carbs":2.44,
+    "fats":34.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, cottage, lowfat, 2% milkfat",
+    "createdBy":"ADMIN",
+    "calories":81.94,
+    "quantity":100,
+    "protein":11.0,
+    "carbs":4.31,
+    "fats":2.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, dry white, queso seco",
+    "createdBy":"ADMIN",
+    "calories":324.98,
+    "quantity":100,
+    "protein":24.5,
+    "carbs":2.07,
+    "fats":24.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, mozzarella, low moisture, part-skim",
+    "createdBy":"ADMIN",
+    "calories":296.16,
+    "quantity":100,
+    "protein":23.7,
+    "carbs":4.44,
+    "fats":20.4,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, parmesan, grated",
+    "createdBy":"ADMIN",
+    "calories":420.0,
+    "quantity":100,
+    "protein":29.6,
+    "carbs":12.4,
+    "fats":28.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, pasteurized process, American, vitamin D fortified",
+    "createdBy":"ADMIN",
+    "calories":368.48,
+    "quantity":100,
+    "protein":18.0,
+    "carbs":5.27,
+    "fats":30.6,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, ricotta, whole milk",
+    "createdBy":"ADMIN",
+    "calories":157.68,
+    "quantity":100,
+    "protein":7.81,
+    "carbs":6.86,
+    "fats":11.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, swiss",
+    "createdBy":"ADMIN",
+    "calories":392.76,
+    "quantity":100,
+    "protein":27.0,
+    "carbs":1.44,
+    "fats":31.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",
+    "createdBy":"ADMIN",
+    "calories":157.56,
+    "quantity":100,
+    "protein":32.1,
+    "carbs":0.0,
+    "fats":3.24,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",
+    "createdBy":"ADMIN",
+    "calories":149.15,
+    "quantity":100,
+    "protein":23.9,
+    "carbs":0.0,
+    "fats":5.95,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cookies, oatmeal, soft, with raisins",
+    "createdBy":"ADMIN",
+    "calories":430.26,
+    "quantity":100,
+    "protein":5.79,
+    "carbs":69.6,
+    "fats":14.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, round, top round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+    "createdBy":"ADMIN",
+    "calories":116.49,
+    "quantity":100,
+    "protein":23.7,
+    "carbs":0.0,
+    "fats":2.41,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, fuji, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":64.84,
+    "quantity":100,
+    "protein":0.15,
+    "carbs":15.7,
+    "fats":0.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, gala, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.07,
+    "quantity":100,
+    "protein":0.13,
+    "carbs":14.8,
+    "fats":0.15,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, granny smith, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":59.14,
+    "quantity":100,
+    "protein":0.27,
+    "carbs":14.2,
+    "fats":0.14,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, honeycrisp, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":60.1,
+    "quantity":100,
+    "protein":0.1,
+    "carbs":14.7,
+    "fats":0.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, red delicious, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.85,
+    "quantity":100,
+    "protein":0.19,
+    "carbs":14.8,
+    "fats":0.21,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, overripe, raw",
+    "createdBy":"ADMIN",
+    "calories":85.3,
+    "quantity":100,
+    "protein":0.73,
+    "carbs":20.1,
+    "fats":0.22,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, ripe and slightly ripe, raw",
+    "createdBy":"ADMIN",
+    "calories":97.57,
+    "quantity":100,
+    "protein":0.74,
+    "carbs":23.0,
+    "fats":0.29,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Black (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":110.65,
+    "quantity":100,
+    "protein":24.4,
+    "carbs":0,
+    "fats":1.45,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Brown (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":112.48,
+    "quantity":100,
+    "protein":25.6,
+    "carbs":0,
+    "fats":1.12,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Carioca (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":113.76,
+    "quantity":100,
+    "protein":25.2,
+    "carbs":0,
+    "fats":1.44,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Cranberry (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":108.67,
+    "quantity":100,
+    "protein":24.4,
+    "carbs":0,
+    "fats":1.23,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Dark Red Kidney (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":115.39,
+    "quantity":100,
+    "protein":25.9,
+    "carbs":0,
+    "fats":1.31,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Flor de Mayo (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":100.94,
+    "quantity":100,
+    "protein":23.3,
+    "carbs":0,
+    "fats":0.86,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Great Northern (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.96,
+    "quantity":100,
+    "protein":24.7,
+    "carbs":0,
+    "fats":1.24,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Light Red Kidney (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.27,
+    "quantity":100,
+    "protein":25.0,
+    "carbs":0,
+    "fats":1.03,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Light Tan (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.92,
+    "quantity":100,
+    "protein":24.6,
+    "carbs":0,
+    "fats":1.28,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Medium Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":111.36,
+    "quantity":100,
+    "protein":25.5,
+    "carbs":0,
+    "fats":1.04,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Navy (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.99,
+    "quantity":100,
+    "protein":24.1,
+    "carbs":0,
+    "fats":1.51,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Pink (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":104.4,
+    "quantity":100,
+    "protein":23.4,
+    "carbs":0,
+    "fats":1.2,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Pinto (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":105.96,
+    "quantity":100,
+    "protein":23.7,
+    "carbs":0,
+    "fats":1.24,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":95.64,
+    "quantity":100,
+    "protein":21.3,
+    "carbs":0,
+    "fats":1.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Small Red (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":105.52,
+    "quantity":100,
+    "protein":23.5,
+    "carbs":0,
+    "fats":1.28,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Small White (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":109.88,
+    "quantity":100,
+    "protein":24.5,
+    "carbs":0,
+    "fats":1.32,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beans, Dry, Tan (0% moisture)",
+    "createdBy":"ADMIN",
+    "calories":117.46,
+    "quantity":100,
+    "protein":26.8,
+    "carbs":0,
+    "fats":1.14,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8\" fat, select, raw",
+    "createdBy":"ADMIN",
+    "calories":138.68,
+    "quantity":100,
+    "protein":22.7,
+    "carbs":0.0,
+    "fats":5.32,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8\" fat, choice, cooked, grilled",
+    "createdBy":"ADMIN",
+    "calories":211.8,
+    "quantity":100,
+    "protein":27.3,
+    "carbs":0.0,
+    "fats":11.4,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Broccoli, raw",
+    "createdBy":"ADMIN",
+    "calories":38.42,
+    "quantity":100,
+    "protein":2.57,
+    "carbs":6.27,
+    "fats":0.34,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, salted",
+    "createdBy":"ADMIN",
+    "calories":739.8,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":82.2,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, unsalted",
+    "createdBy":"ADMIN",
+    "calories":733.5,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":81.5,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Carrots, frozen, unprepared",
+    "createdBy":"ADMIN",
+    "calories":39.15,
+    "quantity":100,
+    "protein":0.81,
+    "carbs":7.92,
+    "fats":0.47,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, American, restaurant",
+    "createdBy":"ADMIN",
+    "calories":375.3,
+    "quantity":100,
+    "protein":17.5,
+    "carbs":6.35,
+    "fats":31.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, dry white, queso seco",
+    "createdBy":"ADMIN",
+    "calories":324.98,
+    "quantity":100,
+    "protein":24.5,
+    "carbs":2.07,
+    "fats":24.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, ricotta, whole milk",
+    "createdBy":"ADMIN",
+    "calories":157.68,
+    "quantity":100,
+    "protein":7.81,
+    "carbs":6.86,
+    "fats":11.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Cheese, swiss",
+    "createdBy":"ADMIN",
+    "calories":392.76,
+    "quantity":100,
+    "protein":27.0,
+    "carbs":1.44,
+    "fats":31.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Eggs, Grade A, Large, egg white",
+    "createdBy":"ADMIN",
+    "calories":52.24,
+    "quantity":100,
+    "protein":10.7,
+    "carbs":2.36,
+    "fats":0.0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Eggs, Grade A, Large, egg whole",
+    "createdBy":"ADMIN",
+    "calories":143.08,
+    "quantity":100,
+    "protein":12.4,
+    "carbs":0.96,
+    "fats":9.96,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Eggs, Grade A, Large, egg yolk",
+    "createdBy":"ADMIN",
+    "calories":328.08,
+    "quantity":100,
+    "protein":16.2,
+    "carbs":1.02,
+    "fats":28.8,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Figs, dried, uncooked",
+    "createdBy":"ADMIN",
+    "calories":277.08,
+    "quantity":100,
+    "protein":3.3,
+    "carbs":63.9,
+    "fats":0.92,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, bread, white, enriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":363.25,
+    "quantity":100,
+    "protein":14.3,
+    "carbs":72.8,
+    "fats":1.65,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, corn, yellow, fine meal, enriched",
+    "createdBy":"ADMIN",
+    "calories":363.66,
+    "quantity":100,
+    "protein":6.2,
+    "carbs":80.8,
+    "fats":1.74,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, pastry, unenriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":358.56,
+    "quantity":100,
+    "protein":8.75,
+    "carbs":77.2,
+    "fats":1.64,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, brown",
+    "createdBy":"ADMIN",
+    "calories":365.41,
+    "quantity":100,
+    "protein":7.19,
+    "carbs":75.5,
+    "fats":3.85,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, glutinous",
+    "createdBy":"ADMIN",
+    "calories":357.6,
+    "quantity":100,
+    "protein":6.69,
+    "carbs":80.1,
+    "fats":1.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, white, unenriched",
+    "createdBy":"ADMIN",
+    "calories":358.66,
+    "quantity":100,
+    "protein":6.94,
+    "carbs":79.8,
+    "fats":1.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, soy, defatted",
+    "createdBy":"ADMIN",
+    "calories":365.97,
+    "quantity":100,
+    "protein":51.1,
+    "carbs":32.9,
+    "fats":3.33,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, soy, full-fat",
+    "createdBy":"ADMIN",
+    "calories":452.3,
+    "quantity":100,
+    "protein":38.6,
+    "carbs":27.9,
+    "fats":20.7,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, enriched, bleached",
+    "createdBy":"ADMIN",
+    "calories":366.12,
+    "quantity":100,
+    "protein":10.9,
+    "carbs":77.3,
+    "fats":1.48,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, enriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":358.52,
+    "quantity":100,
+    "protein":13.1,
+    "carbs":73.2,
+    "fats":1.48,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, unenriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":361.7,
+    "quantity":100,
+    "protein":12.0,
+    "carbs":74.6,
+    "fats":1.7,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Oil, soybean",
+    "createdBy":"ADMIN",
+    "calories":0,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, fuji, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":64.84,
+    "quantity":100,
+    "protein":0.15,
+    "carbs":15.7,
+    "fats":0.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, gala, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.07,
+    "quantity":100,
+    "protein":0.13,
+    "carbs":14.8,
+    "fats":0.15,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, granny smith, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":59.14,
+    "quantity":100,
+    "protein":0.27,
+    "carbs":14.2,
+    "fats":0.14,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, honeycrisp, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":60.1,
+    "quantity":100,
+    "protein":0.1,
+    "carbs":14.7,
+    "fats":0.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, red delicious, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":61.85,
+    "quantity":100,
+    "protein":0.19,
+    "carbs":14.8,
+    "fats":0.21,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, overripe, raw",
+    "createdBy":"ADMIN",
+    "calories":85.3,
+    "quantity":100,
+    "protein":0.73,
+    "carbs":20.1,
+    "fats":0.22,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Bananas, ripe and slightly ripe, raw",
+    "createdBy":"ADMIN",
+    "calories":97.57,
+    "quantity":100,
+    "protein":0.74,
+    "carbs":23.0,
+    "fats":0.29,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, salted",
+    "createdBy":"ADMIN",
+    "calories":739.8,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":82.2,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Butter, stick, unsalted",
+    "createdBy":"ADMIN",
+    "calories":733.5,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":81.5,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Eggs, Grade A, Large, egg whole",
+    "createdBy":"ADMIN",
+    "calories":143.08,
+    "quantity":100,
+    "protein":12.4,
+    "carbs":0.96,
+    "fats":9.96,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, bread, white, enriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":363.25,
+    "quantity":100,
+    "protein":14.3,
+    "carbs":72.8,
+    "fats":1.65,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, corn, yellow, fine meal, enriched",
+    "createdBy":"ADMIN",
+    "calories":363.66,
+    "quantity":100,
+    "protein":6.2,
+    "carbs":80.8,
+    "fats":1.74,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, pastry, unenriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":358.56,
+    "quantity":100,
+    "protein":8.75,
+    "carbs":77.2,
+    "fats":1.64,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, brown",
+    "createdBy":"ADMIN",
+    "calories":365.41,
+    "quantity":100,
+    "protein":7.19,
+    "carbs":75.5,
+    "fats":3.85,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, glutinous",
+    "createdBy":"ADMIN",
+    "calories":357.6,
+    "quantity":100,
+    "protein":6.69,
+    "carbs":80.1,
+    "fats":1.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, rice, white, unenriched",
+    "createdBy":"ADMIN",
+    "calories":358.66,
+    "quantity":100,
+    "protein":6.94,
+    "carbs":79.8,
+    "fats":1.3,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, soy, defatted",
+    "createdBy":"ADMIN",
+    "calories":365.97,
+    "quantity":100,
+    "protein":51.1,
+    "carbs":32.9,
+    "fats":3.33,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, soy, full-fat",
+    "createdBy":"ADMIN",
+    "calories":452.3,
+    "quantity":100,
+    "protein":38.6,
+    "carbs":27.9,
+    "fats":20.7,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, enriched, bleached",
+    "createdBy":"ADMIN",
+    "calories":366.12,
+    "quantity":100,
+    "protein":10.9,
+    "carbs":77.3,
+    "fats":1.48,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, enriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":358.52,
+    "quantity":100,
+    "protein":13.1,
+    "carbs":73.2,
+    "fats":1.48,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, wheat, all-purpose, unenriched, unbleached",
+    "createdBy":"ADMIN",
+    "calories":361.7,
+    "quantity":100,
+    "protein":12.0,
+    "carbs":74.6,
+    "fats":1.7,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Flour, whole wheat, unenriched",
+    "createdBy":"ADMIN",
+    "calories":369.77,
+    "quantity":100,
+    "protein":15.1,
+    "carbs":71.2,
+    "fats":2.73,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Garlic, raw",
+    "createdBy":"ADMIN",
+    "calories":142.7,
+    "quantity":100,
+    "protein":6.62,
+    "carbs":28.2,
+    "fats":0.38,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Oil, olive, extra virgin",
+    "createdBy":"ADMIN",
+    "calories":0,
+    "quantity":100,
+    "protein":0,
+    "carbs":0,
+    "fats":0,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Onions, red, raw",
+    "createdBy":"ADMIN",
+    "calories":44.38,
+    "quantity":100,
+    "protein":0.94,
+    "carbs":9.93,
+    "fats":0.1,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Onions, white, raw",
+    "createdBy":"ADMIN",
+    "calories":35.45,
+    "quantity":100,
+    "protein":0.89,
+    "carbs":7.68,
+    "fats":0.13,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Onions, yellow, raw",
+    "createdBy":"ADMIN",
+    "calories":38.21,
+    "quantity":100,
+    "protein":0.83,
+    "carbs":8.61,
+    "fats":0.05,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Pork, cured, bacon, cooked, restaurant",
+    "createdBy":"ADMIN",
+    "calories":500.5,
+    "quantity":100,
+    "protein":40.9,
+    "carbs":2.1,
+    "fats":36.5,
+    "_class":"com.tracc.models.nutrition.Food"
+  },
+  {
+    "name":"Apples, fuji, with skin, raw",
+    "createdBy":"ADMIN",
+    "calories":64.84,
+    "quantity":100,
+    "protein":0.15,
+    "carbs":15.7,
+    "fats":0.16,
+    "_class":"com.tracc.models.nutrition.Food"
+  }
+]

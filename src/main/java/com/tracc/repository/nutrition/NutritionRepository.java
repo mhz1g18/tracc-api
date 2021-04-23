@@ -20,7 +20,8 @@ public interface NutritionRepository extends MongoRepository<Nutrition, String> 
      * @return list of nutrition
      */
 
-    @Query("{ $or: [ { 'createdBy' : ?0 }, {  'createdBy': 'ADMIN' } ] } ")
+    //@Query("{ $or: [ { 'createdBy' : ?0 }, {  'createdBy': 'ADMIN' } ] } ")
+    @Query(value = "{ 'createdBy' : ?0 }")
     List<Nutrition> getAllNutrition(String userId, Sort sort);
 
     /**
